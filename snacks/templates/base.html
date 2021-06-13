@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>snacks</title>
+  </head>
+  <nav>
+    <ul id="nav">
+        <li>{% block nav-home %}<a href="{% url 'index' %}">Home</a>{% endblock %}</li>
+        <li>{% block nav-about %}<a href="{% url 'about' %}">About</a>{% endblock %}</li>
+    </ul>
+  </nav>
+  <body>
+    {% block body %}
+
+    {% endblock %}
+  </body>
+</html>
